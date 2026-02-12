@@ -1,3 +1,6 @@
+// mvn exec:java "-Dexec.mainClass=seng2050.lab2.Main"
+// above is the line of code I need to run in terminal to make Maven activate
+
 package seng2050.lab2;
 
 import java.io.File;
