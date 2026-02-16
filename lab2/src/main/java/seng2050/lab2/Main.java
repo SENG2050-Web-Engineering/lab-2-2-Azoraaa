@@ -42,6 +42,19 @@ public class Main {
     // Map the servlet
     ctx.addServletMappingDecoded("/HelloWorld", "HelloWorldServlet");
 
+    // Add and map the servlet
+    tomcat.addServlet("", "SimpleMessage", new SimpleMessage());
+    ctx.addServletMappingDecoded("/SimpleMessage", "SimpleMessage");
+
+    tomcat.addServlet("", "generateValidHTML", new generateValidHTML());
+    ctx.addServletMappingDecoded("/generateValidHTML", "generateValidHTML");
+
+    tomcat.addServlet("", "GreetingServlet", new GreetingServlet());
+    ctx.addServletMappingDecoded("/GreetingServlet", "GreetingServlet");
+
+    tomcat.addServlet("", "form", new form());
+    ctx.addServletMappingDecoded("/form", "form");
+
     // Start Tomcat
     try {
       tomcat.getConnector();
@@ -53,3 +66,4 @@ public class Main {
     }
   }
 }
+
