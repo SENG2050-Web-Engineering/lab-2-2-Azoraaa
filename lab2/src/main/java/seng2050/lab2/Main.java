@@ -1,4 +1,5 @@
-// mvn exec:java "-Dexec.mainClass=seng2050.lab2.Main"
+// $env:MAVEN_OPTS="--add-opens java.base/java.io=ALL-UNNAMED"; cd "C:\Users\Brock\github-classroom\SENG2050-Web-Engineering\lab-2\lab-2-2-Azoraaa\lab2"; mvn clean compile exec:java
+
 // above is the line of code I need to run in terminal to make Maven activate
 
 package seng2050.lab2;
